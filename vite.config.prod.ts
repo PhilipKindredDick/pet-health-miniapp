@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/pet-health-miniapp/", // GitHub Pages base path
+  base: "/pet-health-miniapp/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
@@ -17,6 +17,6 @@ export default defineConfig({
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
     sourcemap: false,
-    minify: "terser",
+    minify: true,
   },
 });
